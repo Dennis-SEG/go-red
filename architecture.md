@@ -1,28 +1,17 @@
 # Go-RED Architecture
 
 ```mermaid
-graph TD;
-    A[Web UI];
-    B[Go HTTP Server];
-    C[Flow Engine];
-    D[Node Registry];
-    E[Flow Storage];
-    F[Runtime Execution];
-    G[Standard Nodes];
-    H[Custom Nodes];
-    I[WebSocket Server];
-    J[CLI];
-    A  B;
-    B  C;
-    C --> D;
-    C --> E;
-    C --> F;
-    F --> G;
-    F --> H;
-    B --> I;
-    I  A;
-    J --> B;
-```
+graph TD
+    A[Web UI] <--> B[Go HTTP Server]
+    B <--> C[Flow Engine]
+    C --> D[Node Registry]
+    C --> E[Flow Storage]
+    C --> F[Runtime Execution]
+    F --> G[Standard Nodes]
+    F --> H[Custom Nodes]
+    B --> I[WebSocket Server]
+    I <--> A
+    J[CLI] --> B
 
 This architecture diagram shows the main components of the Go-RED system and how they interact:
 
