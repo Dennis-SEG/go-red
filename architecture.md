@@ -12,7 +12,6 @@ graph TD
     B --> I[WebSocket Server]
     I  A
     J[CLI] --> B
-```
 
 This architecture diagram shows the main components of the Go-RED system and how they interact:
 
