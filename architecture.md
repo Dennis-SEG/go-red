@@ -13,6 +13,9 @@ graph TD
     I <--> A
     J[CLI] --> B
 
+```
+
+
 This architecture diagram shows the main components of the Go-RED system and how they interact:
 
 - **Web UI**: The browser-based flow editor
