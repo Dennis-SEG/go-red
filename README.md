@@ -75,7 +75,7 @@ See [advantages-tradeoffs.md](advantages-tradeoffs.md) for a detailed comparison
 
 The go-red architecture consists of several components that work together to provide a seamless flow-based programming experience. The core components include the Web UI, HTTP Server, Flow Engine, and various nodes.
 
-See [ARCHITECTURE.md](ARCHITECTURE.md) for the architecture diagram and detailed explanation.
+See [ARCHITECTURE.md](architecture.md) for the architecture diagram and detailed explanation.
 
 ## Development
 
