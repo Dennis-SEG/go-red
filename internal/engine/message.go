@@ -121,4 +121,13 @@ func generateUUID() string {
 		   randomHex(12)
 }
 
-// randomHex
+// randomHex generates a random hex string of the given length
+func randomHex(length int) string {
+	const hexChars = "0123456789abcdef"
+	result := make([]byte, length)
+	for i := 0; i < length; i++ {
+		result[i] = hexChars[time.Now().UnixNano()%16]
+		time.Sleep(1 * time.Nanosecond) // Ensure different values
+	}
+	return string(result)
+}
